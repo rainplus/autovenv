@@ -14,7 +14,7 @@ How awesome is that!?
 ### Installation
 
 ```sh
-git clone git@github.com:rainplus/autovenv-plugin-zsh.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/autovenv
+git clone git@github.com:rainplus/autovenv.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/autovenv
 
 ```
 
