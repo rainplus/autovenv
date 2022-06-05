@@ -1,7 +1,8 @@
 # Initialization: activate autovenv or report its absence
 () {
   # Complain if "python -m venv" is not installed
-	if python -c "import venv" >/dev/null 2>&1;then
+	
+	if python3 -c "import venv" >/dev/null 2>&1;then
 	else
     cat <<END >&2
 -------- AUTOVENV ---------
@@ -23,7 +24,7 @@ use_env() {
   echo -n "Create virtualenv $venv now? (Yn) "
   read answer
   if [[ "$answer" == "Y" || "$answer" == "y" ]]; then
-    python -m venv "$venv"
+    python3 -m venv "$venv"
   fi
 }
 
